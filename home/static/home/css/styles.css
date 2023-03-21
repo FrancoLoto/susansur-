@@ -1,0 +1,321 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+/* Variables */
+:root {
+    --font-family: "Noto Sans", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #0B5345;
+    --secondary-color: #0B5345;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  /* Variables fin */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+list-style-type: none;
+}
+
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+
+
+body {
+
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: #D6A469;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 20;
+    }
+
+
+nav h1 {
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    color: #FAFAF9;
+}
+
+.navegacion {
+    color: #FAFAF9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacion a {
+    font-size: small;
+}
+
+.navegacion a:hover {
+    color: var(--primary-color);
+}
+
+.nav-link {
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav i img {
+    width: 25px;
+}
+
+nav a {
+    color: #FAFAF9;
+    transition: var(--transition);
+}
+nav a:hover {
+    color: var(--primary-color);
+}
+
+
+
+/* Sección Hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin-left: 110px;
+  }
+  
+.hero-img {
+    margin-left: 2px;
+    border-radius: 8px;
+    padding-top: 2cm;
+    height: 34.5rem;
+    width: 52.5rem;
+}
+
+
+.bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 1px 5px 1px var(--primary-shadow);
+}
+
+.bio-titulo i {
+    width: 2rem;
+    height: 2rem;
+}
+
+.bio small i {
+    width: 5px;
+}
+
+.bio h1 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
+
+#telefono {
+    text-align: center;
+}
+
+/* Sección info */
+
+#caracteristicas {
+    text-align: center;
+}
+
+.info-contenedor {
+    width: 100%;
+}
+
+.info-lista {
+    padding-left: 8%;
+    display: inline-block;
+}
+
+.info-lista ul {
+    list-style: disc;
+}
+
+.info-lista ul li {
+    font-size: 100%;
+}
+
+
+/* Sección mapa de Las Grutas */
+
+#plano-lg {
+    text-align: center;
+}
+
+.plano {
+    text-align: center;
+    width: 100%;
+}
+
+.plano img {
+    text-align: center;
+    width: 60%;
+    height: 80%;
+}
+
+/* Sección del footer */
+
+footer {
+    background-color: #D6A469;
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+
+
+/* Sección Carousel */
+
+.carousel-inner {
+    height: 50%;
+}
+
+
+.carousel-item img {
+  height: 120vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+/* Sección Sociales */
+
+.sociales {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+  }
+  
+.socicon {
+width: 3rem;
+height: 3rem;
+}
+
+small {
+    color: gray;
+}
+
+
+/* Flecha arriba */
+.desplazarse-hacia-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+
+
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
+
+.show {
+    display: block;
+}
+
+/* Boton Whatsapp */
+
+.button {
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* los cambios se reflejan en una pantalla con un ancho de 720px ye inferior */
+    
+    .navegacion {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        margin: 0 10px;
+    }
+  
+    .hero {
+      margin-top: -4rem;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .hero img {
+          margin-top: 1cm;
+          height: 26.5rem;
+          width: 20rem;
+      }
+  
+    .bio {
+      margin-top: 2rem;
+      width: 20.5rem;
+    }
+  
+    .icono {
+      width: 5.875rem;
+      height: 5.25rem;
+    }
+  }
+

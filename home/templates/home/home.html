@@ -1,0 +1,101 @@
+{% extends 'home/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+<section class="hero" id="about">
+    <img
+      src="{% static 'images/frente-dpto.jpeg' %}"
+      alt="programacion-hero"
+      loading="lazy"
+      class="hero-img"
+    />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-titulo">¡Bienvenidos &nbsp; <i class="em-svg em-wave" aria-role="presentation" aria-label="WAVING HAND SIGN"></i> !</h2>
+      <small>Treneta y Sierra Payleman Altura bajada 4ta, Las Grutas</small>
+      <p class="bio-texto">
+        Contamos con dos hermosos deptos, altura 4ta bajada, a 50 mts del mar. Excelente ubicación!
+      </p>
+      <i class="fas fa-umbrella-beach"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Dist. al mar: 50 mts</span><br>
+      <i class="fa-solid fa-city"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Dist. al centro: 300 mts</span><br>
+      <i class="fa-solid fa-bed"></i></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Cant. personas: 2-4</span><br>
+      <i class="fa-solid fa-square-parking"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Cochera cerrada</span>
+      <br><br>
+      <span><h6 id="telefono">2920-609034</h6></span>
+    </div>
+</section>
+<br><br>
+<h2 id="caracteristicas">Características</h2>
+<br>
+<br>
+<div class="info-contenedor">
+    <div class="info-lista" id="info">
+        <h4>Planta Baja</h3><br>
+        <ul>
+            <li>Estar comedor amplio, totalmente equipado (heladera, microondas).</li>
+            <li>Sillones para ver TV.</li>
+            <li>Amplio garage cerrado.</li>
+            <li>Patio interno con parrilla individual.</li>
+            <li>Baño de servicio.</li>
+        </ul>
+    </div>
+    <div class="info-lista" id="info">
+        <h4>Planta Alta</h3><br>
+        <ul>
+            <li>Buen dormitorio con cama matrimonio, placard, ventiladores de techo y de pie.</li>
+            <li>Balcón terraza.</li>
+            <li>Amplio dormitorio dos camas simples.</li>
+            <li>Buen balcón terraza.</li>
+            <li>Baño amplio totalmente equipado.</li>
+        </ul>
+    </div>
+</div>
+<br>
+<div class="button">
+    <a href="https://wa.me/5492920609034" target="_blank"><button type="button" class="btn btn-outline-success">Enviar WhatsApp</button></a>
+</div>
+
+<br><br>
+
+
+{% include 'home/carousel.html' %}
+
+<br>
+<br>
+<h2 id="plano-lg">Mapa de Las Grutas</h2>
+<br>
+<br>
+
+<div class="plano">
+    <p>click en la imagen para descargar</p>
+    <a href="{% static 'home/planolasgrutas.pdf' %}" target="_blank">
+        <img src="{% static 'images/plano-lg.png' %}" alt="plano-lg"/>
+    </a>
+</div>
+<br><br>
+<div class="button">
+    <a href="https://wa.me/5492920609034" target="_blank"><button type="button" class="btn btn-outline-success">Enviar WhatsApp</button></a>
+</div>
+<br><br>
+<div id="cont_da12947d64c36aefd890f5afd23ab90b"><script type="text/javascript" async src="https://www.meteored.com.ar/wid_loader/da12947d64c36aefd890f5afd23ab90b"></script></div>
+
+<div class="sociales">
+    <a href="https://wa.me/5492920609034" target="_blank"
+      ><img
+        src="{% static 'iconos/whatsapp-icon.svg' %}"
+        alt="Twitter"
+        loading="lazy"
+        class="socicon"
+    /></a>
+</div>
+
+<!-- Desplazar hacia arriba -->
+<i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba" onclick="desplazarseHaciaArriba()">
+    <img src="{% static 'iconos/flecha-arriba.png' %}" class="socicon up-arrow" alt="desplazarse-hacia-arriba" />
+</i>
+<script>
+    function desplazarseHaciaArriba() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+</script>
+{% endblock %}
