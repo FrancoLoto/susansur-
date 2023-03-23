@@ -20,14 +20,12 @@ docopt==0.6.2
 idna==3.4
 jmespath==1.0.1
 jsonschema==3.2.0
-mysqlclient==2.1.1
 paramiko==3.1.0
 pathspec==0.10.1
 Pillow==9.4.0
 psycopg2-binary==2.9.3
 pycparser==2.21
 PyNaCl==1.5.0
-pyOpenSSL==23.0.0
 pyrsistent==0.19.3
 python-dateutil==2.8.2
 python-decouple==3.8
