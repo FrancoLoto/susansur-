@@ -161,6 +161,7 @@ nav a:hover {
 }
 
 .info-lista ul {
+    background-color: #D6A469;
     list-style: disc;
 }
 
