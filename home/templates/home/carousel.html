@@ -1,7 +1,7 @@
 {% load static %}
 
 <div class="container">
-  <div id="carouselExample" class="carousel slide mx-auto w-75">
+  <div id="carouselExample" class="carousel slide mx-auto w-100 max-height: calc(100vh - 56px)">
       <div class="carousel-inner">
           {% for imagen in imagenes %}
           <div class="carousel-item {% if forloop.first %}active{% endif %}">
