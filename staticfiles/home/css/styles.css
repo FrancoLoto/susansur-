@@ -1,0 +1,380 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+/* Variables */
+:root {
+    --font-family: "Noto Sans", sans-serf;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #fcfcfc;
+    --primary-color: #0B5345;
+    --secondary-color: #ff7235;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+  }
+  /* Variables fin */
+
+
+html {
+    background-color: antiquewhite;
+    scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+list-style-type: none;
+}
+
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+
+
+body {
+    background-color: antiquewhite !important;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+/* Navbar */
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: #D6A469;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+nav h1 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    color: #FAFAF9;
+}
+
+.navegacion {
+    color: white;
+}
+
+nav i img {
+    width: 1.563rem;
+}
+
+nav a {
+    color: #FAFAF9;
+    transition: var(--transition);
+}
+nav a:hover {
+    color: var(--primary-color);
+}
+
+
+
+/* Sección Hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin-left: 5rem;
+  }
+  
+.hero-img {
+    margin-left: 1px;
+    border-radius: 8px;
+    padding-top: 2cm;
+    height: 34.5rem;
+    width: 56.5rem;
+}
+
+
+.bio {
+    width: 28rem;
+    padding: 0.625rem;
+    border-radius: 8px;
+    box-shadow: 0px 1px 5px 1px var(--primary-shadow);
+}
+
+.bio-titulo i {
+    width: 2rem;
+    height: 2rem;
+}
+
+.bio small i {
+    width: 5px;
+}
+
+.bio h1 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
+
+.bio #telefono {
+    font-size: 120%;
+    margin-left: 30%;
+}
+
+/* Sección info */
+
+
+.info-contenedor {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #D6A469;
+    width: 100%;
+}
+
+.info-lista {
+    color: white;
+    padding-left: 8%;
+    display: inline-block;
+}
+
+.info-lista ul {
+    list-style: disc;
+}
+
+.info-lista ul li {
+    font-size: 100%;
+}
+
+
+/* Sección mapa de Las Grutas */
+
+#plano-lg {
+    text-align: center;
+}
+
+.plano {
+    text-align: center;
+    width: 100%;
+}
+
+.plano img {
+    text-align: center;
+    width: 60%;
+    height: 80%;
+}
+
+/* Sección del footer */
+
+footer {
+    background-color: #D6A469;
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+
+
+/* Sección Carousel */
+
+.carousel-inner {
+    height: 50%;
+}
+
+
+.carousel-item img {
+  height: 90vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+/* Sección Sociales */
+
+.sociales {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+  }
+  
+.socicon {
+width: 3rem;
+height: 3rem;
+}
+
+small {
+    color: gray;
+}
+
+
+/* Flecha arriba */
+.desplazarse-hacia-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+.flecha-arriba {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* Menú hamburguesa */
+
+.burger-menu {
+    color: #FAFAF9;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+
+.button {
+    text-align: center;
+}
+
+.contenedor-widget {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 720px) {
+    /* los cambios se reflejan en una pantalla con un ancho de 720px ye inferior */
+    nav {
+      padding: 1.5rem 1rem;
+    }
+  
+    
+    .burger-menu {
+      display: block;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    .navegacion.show {
+        display: block;
+    }
+  
+    .hero {
+      margin-top: -4rem;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .hero img {
+          margin-top: 1cm;
+          height: 26.5rem;
+          width: 20rem;
+      }
+  
+    .bio {
+      margin-top: 2rem;
+      width: 20.5rem;
+    }
+  
+    .icono {
+      width: 5.875rem;
+      height: 5.25rem;
+    }
+  }
+
+
+@media only screen and (max-width: 480px) {
+/* Estilos para pantallas pequeñas */
+
+
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 100%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    .hero {
+        margin-top: -4rem;
+    }
+  
+    .hero img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .bio {
+        margin-top: 2rem;
+        width: 20.5rem;
+    }
+    
+    .icono {
+        width: 5.875rem;
+        height: 5.25rem;
+    }
+     
+}
