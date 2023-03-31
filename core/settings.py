@@ -17,7 +17,7 @@ ALLOWED_HOSTS = ['http://127.0.0.1:8000/', '127.0.0.1', 'localhost']
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-mhmw0i$%3uu%!cq8=9-l-z-^un_t(fmhu544y$yr-zsu@*8=vb'
+SECRET_KEY = config('SECRET_KEY')
 
 
 
