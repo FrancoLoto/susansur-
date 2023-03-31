@@ -8,10 +8,10 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-DEBUG=True
+DEBUG=False
 
 
-ALLOWED_HOSTS = ['http://127.0.0.1:8000/', '127.0.0.1',]
+ALLOWED_HOSTS = ['http://127.0.0.1:8000/', '127.0.0.1', 'localhost']
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -112,13 +112,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 MEDIA_URL = '/media/'
 
-STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'home/static')
+    os.path.join(BASE_DIR, 'static')
 ]
 
 
