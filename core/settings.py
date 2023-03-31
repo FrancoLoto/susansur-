@@ -8,7 +8,7 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-DEBUG= True
+DEBUG=False
 
 
 ALLOWED_HOSTS = ['http://127.0.0.1:8000/', '127.0.0.1', 'localhost']
