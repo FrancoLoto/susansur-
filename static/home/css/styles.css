@@ -82,12 +82,9 @@ nav h1 {
     color: #FAFAF9;
 }
 
-.navegacion {
-    color: white;
-}
 
 nav i img {
-    width: 1.563rem;
+    width: 1.163rem;
 }
 
 nav a {
@@ -95,6 +92,16 @@ nav a {
     transition: var(--transition);
 }
 nav a:hover {
+    color: var(--primary-color);
+}
+
+.navegacion {
+    display: flex;
+    font-size: x-large;
+    color: white;
+}
+
+.navegacion:hover {
     color: var(--primary-color);
 }
 
@@ -256,17 +263,6 @@ small {
 }
 
 
-/* Menú hamburguesa */
-
-.burger-menu {
-    color: #FAFAF9;
-    font-size: 2rem;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
-}
-
 
 .button {
     text-align: center;
@@ -277,25 +273,15 @@ small {
     overflow: hidden;
 }
 
+
+
 @media screen and (max-width: 720px) {
     /* los cambios se reflejan en una pantalla con un ancho de 720px ye inferior */
     nav {
       padding: 1.5rem 1rem;
     }
-  
+
     
-    .burger-menu {
-      display: block;
-    }
-
-    .navegacion {
-        display: none;
-    }
-
-    .navegacion.show {
-        display: block;
-    }
-  
     .hero {
       margin-top: -4rem;
       flex-direction: column;
@@ -306,7 +292,7 @@ small {
           margin-top: 1cm;
           height: 26.5rem;
           width: 20rem;
-      }
+    }
   
     .bio {
       margin-top: 2rem;
@@ -319,62 +305,3 @@ small {
     }
   }
 
-
-@media only screen and (max-width: 480px) {
-/* Estilos para pantallas pequeñas */
-
-
-    body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    nav {
-        padding: 1.5rem 1rem;
-    }
-    
-    nav ul {
-        position: fixed;
-        background-color: var(--bg-color);
-        flex-direction: column;
-        top: 86px;
-        left: 10%;
-        width: 100%;
-        text-align: center;
-        transform: translateX(120%);
-        transition: transform 0.5s ease-in;
-    }
-
-    nav ul li {
-        margin: 8px;
-    }
-
-    .burger-menu {
-        display: block;
-    }
-
-
-    nav ul.show {
-        transform: translateX(0);
-    }
-
-    .hero {
-        margin-top: -4rem;
-    }
-  
-    .hero img {
-        height: auto;
-        max-width: 100%;
-    }
-    
-    .bio {
-        margin-top: 2rem;
-        width: 20.5rem;
-    }
-    
-    .icono {
-        width: 5.875rem;
-        height: 5.25rem;
-    }
-     
-}
