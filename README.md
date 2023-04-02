@@ -1,1 +1,4 @@
-# Simple sitio web para alquiler de departamentos creado con Django y desplegado en PythonAnywhere.
+# Sitio web estático para alquiler de departamentos por día.
+
+
+### Creado con HTML5, CSS3, Bootstrap, JavaScript y Django.
